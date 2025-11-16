@@ -38,3 +38,18 @@
 **Q 7. NUMA**
 
     Non uniform memory access : CPU uses its local memory for fast processing, as the remote memory is slow.
+
+**Q 8. Softlink vs hardlink**
+
+    Softlink -> original file -> data on hard disk    
+    Hardlink ----> Data on hard disk <----- Original file    
+
+    Command to create:
+    - Softlink
+    ```
+        ln -s <target> <link_name>
+    ```
+    - Hardlink
+    ```
+        ln <target> <link_name>
+    ```
